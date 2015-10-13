@@ -5,7 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-gem 'mysql2', '>= 0.4.1'
+
+#gem 'mysql2', '>= 0.4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -40,7 +41,7 @@ group :development, :test do
 end
 
 group :production do
-  
+  gem 'mysql2'  
 end
 
 group :development do
